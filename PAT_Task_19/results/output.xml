@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.0 on win32)" generated="2026-05-12T21:41:48.451022" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\tamil\PyCharmMiscProject\guviPython\PAT_Task_19\tests\login_test.robot">
+<test id="s1-t1" name="Verify User Can Login And Logout Successfully" line="7">
+<kw name="Open Browser To Login Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:48.703042" level="INFO">Opening browser 'chrome' to base url 'https://robotsparebinindustries.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-12T21:41:48.701076" elapsed="1.751673"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-12T21:41:50.452749" elapsed="0.038532"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-05-12T21:41:50.491281" elapsed="0.006050"/>
+</kw>
+<doc>Opens browser and navigates to application</doc>
+<status status="PASS" start="2026-05-12T21:41:48.701076" elapsed="1.796255"/>
+</kw>
+<kw name="Enter Username" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:50.497331" level="INFO">Typing text 'maria' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T21:41:50.497331" elapsed="0.185544"/>
+</kw>
+<arg>${USERNAME}</arg>
+<status status="PASS" start="2026-05-12T21:41:50.497331" elapsed="0.185544"/>
+</kw>
+<kw name="Enter Password" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:50.682875" level="INFO">Typing text 'thoushallnotpass' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T21:41:50.682875" elapsed="0.200369"/>
+</kw>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2026-05-12T21:41:50.682875" elapsed="0.200369"/>
+</kw>
+<kw name="Click Login Button" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:50.894533" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T21:41:50.894533" elapsed="0.171377"/>
+</kw>
+<status status="PASS" start="2026-05-12T21:41:50.894533" elapsed="0.171377"/>
+</kw>
+<kw name="Verify Login Successful" owner="keywords">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:52.259450" level="INFO">Current page contains element 'xpath=//button[contains(text(),'Log out')]'.</msg>
+<arg>xpath=//button[contains(text(),'Log out')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-12T21:41:51.068932" elapsed="1.190518"/>
+</kw>
+<doc>Checks dashboard element after login</doc>
+<status status="PASS" start="2026-05-12T21:41:51.067918" elapsed="1.192087"/>
+</kw>
+<kw name="Logout From Application" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:52.260916" level="INFO">Clicking button 'xpath://button[@id='logout']'.</msg>
+<arg>xpath://button[@id='logout']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T21:41:52.260005" elapsed="0.085935"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-12T21:41:52.348976" level="INFO">Current page contains element 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-12T21:41:52.346464" elapsed="0.002512"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-12T21:41:52.348976" elapsed="2.165196"/>
+</kw>
+<doc>Logs out from application</doc>
+<status status="PASS" start="2026-05-12T21:41:52.260005" elapsed="2.254167"/>
+</kw>
+<doc>Test to verify login and logout functionality</doc>
+<status status="PASS" start="2026-05-12T21:41:48.701076" elapsed="5.815109"/>
+</test>
+<status status="PASS" start="2026-05-12T21:41:48.456311" elapsed="6.059874"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
