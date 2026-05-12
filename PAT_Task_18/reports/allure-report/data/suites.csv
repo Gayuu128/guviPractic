@@ -1,6 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","13904","Validate Username and Password Input Box","","2026-05-12","passed","2026-05-12","","","",""
-"","20039","Validate Logout Functionality","","2026-05-12","passed","2026-05-12","","","",""
-"","15287","Successful Login","","2026-05-12","passed","2026-05-12","","","",""
-"","14371","Validate Submit Button","","2026-05-12","passed","2026-05-12","","","",""
-"","15196","Unsuccessful Login","","2026-05-12","passed","2026-05-12","","","",""
