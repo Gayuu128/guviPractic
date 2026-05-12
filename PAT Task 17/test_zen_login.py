@@ -10,7 +10,7 @@ def test_successful_login(setup):
 
     page.enter_username("valid_email")
 
-    page.enter_password("invalid_password")
+    page.enter_password("valid_password")
 
     page.click_login()
 
@@ -52,7 +52,7 @@ def test_validate_input_fields(setup):
 
     page.enter_username("valid_email")
 
-    page.enter_password("invalid_password")
+    page.enter_password("valid_password")
 
     username_value = page_driver.locator(
         page.username_input
@@ -64,7 +64,7 @@ def test_validate_input_fields(setup):
 
     assert username_value == "valid_email"
 
-    assert password_value == "invalid_password"
+    assert password_value == "valid_password"
 
 
 # Validate Submit Button
@@ -76,7 +76,7 @@ def test_validate_submit_button(setup):
 
     page.enter_username("valid_email")
 
-    page.enter_password("invalid_password")
+    page.enter_password("valid_password")
 
     page.click_login()
 
@@ -97,7 +97,7 @@ def test_logout_functionality(setup):
 
     page.enter_username("valid_email")
 
-    page.enter_password("invalid_password")
+    page.enter_password("valid_password")
 
     page.click_login()
     page.close_popup()
